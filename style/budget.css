@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6fb;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header p {
+  color: #666;
+}
+
+/* Common Card Style */
+.card {
+  background-color: white;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* Main Budget Card */
+.main-card {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.main-card .subtext {
+  color: #e0e0ff;
+}
+
+/* Text Helpers */
+.label {
+  font-size: 13px;
+  color: #777;
+}
+
+.subtext {
+  font-size: 13px;
+  color: #666;
+}
+
+.amount {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Row Layout */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right {
+  text-align: right;
+}
+
+/* Progress Bar */
+.progress {
+  background-color: #ddd;
+  height: 8px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #4f46e5;
+  border-radius: 6px;
+}
+
+/* Sections */
+.section-title {
+  margin: 20px 0 10px;
+}
+
+/* Categories */
+.category-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.category-card {
+  text-align: center;
+}
+
+/* Savings & Debt */
+.two-column {
+  display: flex;
+  gap: 12px;
+}
+
+.savings {
+  border-left: 5px solid #22c55e;
+}
+
+.debt {
+  border-left: 5px solid #ef4444;
+}
+
+/* Insight */
+.insight {
+  background-color: #eef2ff;
+}

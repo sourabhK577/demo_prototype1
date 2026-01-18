@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Budget Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h2>Expense Monitor</h2>
+    <ul>
+      <li><a href="index.html" class="active">Dashboard</a></li>
+      <li><a href="budget.html">Budget</a></li>
+      <li><a href="transactions.html">Transactions</a></li>
+      <li><a href="profile.html">Profile</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN WRAPPER -->
+  <main class="container">
+
+    <!-- OVERVIEW -->
+    <section class="section">
+      <h3>Monthly Overview</h3>
+
+      <div class="cards">
+        <div class="card">
+          <h4>Monthly Budget</h4>
+          <p class="amount">₹2000</p>
+          <p class="muted">Budget set</p>
+        </div>
+
+        <div class="card">
+          <h4>Total Spent</h4>
+          <p class="amount red">₹1420</p>
+          <div class="progress-bar">
+            <div class="progress" style="width:71%"></div>
+          </div>
+          <p class="muted">71% used</p>
+        </div>
+
+        <div class="card">
+          <h4>Total Savings</h4>
+          <p class="amount green">₹280</p>
+          <p class="muted">Across weeks</p>
+        </div>
+
+        <div class="card">
+          <h4>Total Overspent</h4>
+          <p class="amount red">₹200</p>
+          <p class="muted">Exceeded limits</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURRENT TIME CONTEXT -->
+    <section class="section">
+      <h3>Current Status</h3>
+
+      <div class="time-wrapper">
+        <div class="time-card">
+          <h5>Current Week</h5>
+          <p class="amount">Week 3</p>
+          <p class="muted">Out of 4</p>
+        </div>
+
+        <div class="time-card">
+          <h5>Today</h5>
+          <p class="amount">Day 5</p>
+          <p class="muted">Friday</p>
+        </div>
+
+        <div class="time-card">
+          <h5>Week Range</h5>
+          <p class="amount">Day 15 – 21</p>
+          <p class="muted">Monthly cycle</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ANALYTICS -->
+    <section class="section">
+      <h3>Spending Analytics</h3>
+
+      <div class="analytics">
+        <div class="card graph large">
+          <h4>Monthly Spending Trend</h4>
+          <div class="graph-placeholder">Graph Area</div>
+        </div>
+
+        <div class="card graph">
+          <h4>Category Distribution</h4>
+          <div class="graph-placeholder">Graph Area</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WEEKLY BREAKDOWN -->
+    <section class="section">
+      <h3>Weekly Breakdown</h3>
+
+      <div class="cards">
+        <div class="card">
+          <h4>Week 1</h4>
+          <p class="amount">₹400 / ₹500</p>
+          <p class="green">Saved ₹100</p>
+        </div>
+
+        <div class="card">
+          <h4>Week 2</h4>
+          <p class="amount">₹700 / ₹500</p>
+          <p class="red">Overspent ₹200</p>
+        </div>
+
+        <div class="card">
+          <h4>Week 3</h4>
+          <p class="amount">₹320 / ₹500</p>
+          <p class="green">Saved ₹180</p>
+        </div>
+
+        <div class="card">
+          <h4>Week 4</h4>
+          <p class="muted">No expenses yet</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORY SPENDING -->
+    <section class="section">
+      <h3>Category Spending</h3>
+
+      <div class="card">
+        <div class="category-row">
+          <span>Food</span>
+          <div class="bar"><div style="width:70%"></div></div>
+          <span>₹350</span>
+        </div>
+
+        <div class="category-row">
+          <span>Education</span>
+          <div class="bar"><div style="width:40%"></div></div>
+          <span>₹200</span>
+        </div>
+
+        <div class="category-row">
+          <span>Entertainment</span>
+          <div class="bar"><div style="width:50%"></div></div>
+          <span>₹250</span>
+        </div>
+
+        <div class="category-row">
+          <span>Others</span>
+          <div class="bar"><div style="width:20%"></div></div>
+          <span>₹100</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRANSACTIONS -->
+    <section class="section">
+      <h3>Recent Transactions</h3>
+
+      <div class="card transactions">
+        <div class="txn-header">
+          <span>Date</span>
+          <span>Category</span>
+          <span>Amount</span>
+        </div>
+
+        <div class="txn-row"><span>01 Jan</span><span>Food</span><span class="red">₹50</span></div>
+        <div class="txn-row"><span>02 Jan</span><span>Education</span><span class="red">₹100</span></div>
+        <div class="txn-row"><span>03 Jan</span><span>Entertainment</span><span class="red">₹150</span></div>
+        <div class="txn-row"><span>04 Jan</span><span>Food</span><span class="red">₹70</span></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Student Budget System • Monthly Reset Enabled</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Budget</title>
+  <link rel="stylesheet" href="../style/budget.css">
+</head>
+
+<body>
+
+  <!-- Page Header -->
+  <div class="header">
+    <h1>Monthly Budget</h1>
+    <p>Understand your spending, one cycle at a time</p>
+  </div>
+
+  <!-- Monthly Budget -->
+  <div class="card main-card">
+    <p class="label">Total Monthly Budget</p>
+    <h2>₹2000</h2>
+    <p class="subtext">Divided into 4 budget cycles</p>
+  </div>
+
+  <!-- Current Cycle -->
+  <div class="card">
+    <div class="row">
+      <div>
+        <p class="label">Current Cycle</p>
+        <p class="subtext">Cycle 2 of 4</p>
+      </div>
+      <div class="right">
+        <p class="label">Available</p>
+        <h3>₹400</h3>
+      </div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress">
+      <div class="progress-fill" style="width: 65%;"></div>
+    </div>
+  </div>
+
+  <!-- Categories -->
+  <h3 class="section-title">Spending Categories</h3>
+
+  <div class="category-container">
+    <div class="card category-card">
+      <h4>Food</h4>
+      <p class="subtext">40%</p>
+      <p class="amount">₹200</p>
+    </div>
+
+    <div class="card category-card">
+      <h4>Travel</h4>
+      <p class="subtext">25%</p>
+      <p class="amount">₹125</p>
+    </div>
+
+    <div class="card category-card">
+      <h4>Entertainment</h4>
+      <p class="subtext">20%</p>
+      <p class="amount">₹100</p>
+    </div>
+
+    <div class="card category-card">
+      <h4>Others</h4>
+      <p class="subtext">15%</p>
+      <p class="amount">₹75</p>
+    </div>
+  </div>
+
+  <!-- Savings & Debt -->
+  <div class="two-column">
+    <div class="card savings">
+      <h4>Savings Wallet</h4>
+      <p class="amount">₹100</p>
+      <p class="subtext">Can be used in final cycle</p>
+    </div>
+
+    <div class="card debt">
+      <h4>Overspending Recovery</h4>
+      <p class="amount">₹200</p>
+      <p class="subtext">Adjusted gradually</p>
+    </div>
+  </div>
+
+  <!-- Insight -->
+  <div class="card insight">
+    <p>
+      You spent more in the last cycle, so this cycle is slightly tighter.
+      Stay mindful 🙂
+    </p>
+  </div>
+
+</body>
+</html>
