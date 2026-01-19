@@ -3,7 +3,7 @@ const demoUsers = [
     { email: "demo@bank.com", password: "1234", name: "Jack Sparrow" }
 ];
 
-// ---------- LOGIN ----------
+// ---------- LOGINNNNN ----------
 const loginForm = document.getElementById("loginForm");
 
 loginForm.addEventListener("submit", function(e){
@@ -46,3 +46,4 @@ signupForm.addEventListener("submit", function(e){
         alert("Please fill all fields to sign up!");
     }
 });
+
