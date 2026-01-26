@@ -2,94 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Budget</title>
+  <title>Set Budget</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="../style/budget.css">
 </head>
 
 <body>
 
-  <!-- Page Header -->
-  <div class="header">
-    <h1>Monthly Budget</h1>
-    <p>Understand your spending, one cycle at a time</p>
-  </div>
+  <!-- NAVBAR (SAME AS INDEX) -->
+  <nav class="navbar">
+    <h2>Expense Monitor</h2>
+    <ul>
+      <li><a href="index.html" class="active">Dashboard</a></li>
+      <li><a href="budget.html">Budget</a></li>
+      <li><a href="friends.html">friends</a></li>
+      <li><a href="transactions.html">Transactions</a></li>
+      <li><a href="profile.html">Profile</a></li>
+    </ul>
+  </nav>
 
-  <!-- Monthly Budget -->
-  <div class="card main-card">
-    <p class="label">Total Monthly Budget</p>
-    <h2>₹2000</h2>
-    <p class="subtext">Divided into 4 budget cycles</p>
-  </div>
+  <!-- PAGE CONTENT -->
+  <div class="page">
 
-  <!-- Current Cycle -->
-  <div class="card">
-    <div class="row">
-      <div>
-        <p class="label">Current Cycle</p>
-        <p class="subtext">Cycle 2 of 4</p>
+    <div class="header">
+      <h1>Monthly Budget Setup</h1>
+      <p>Set this once. Stay stress-free all month.</p>
+    </div>
+
+    <!-- TOTAL BUDGET -->
+    <div class="card highlight">
+      <label>Total Monthly Budget</label>
+      <div class="budget-box">
+        <span>₹</span>
+        <input type="number" value="2000">
       </div>
-      <div class="right">
-        <p class="label">Available</p>
-        <h3>₹400</h3>
+    </div>
+
+    <!-- CATEGORY SPLIT -->
+    <div class="card">
+      <h2>Category Allocation (%)</h2>
+
+      <div class="row">
+        <span>Food</span>
+        <input type="number" value="50">
+        <span class="percent">%</span>
+      </div>
+
+      <div class="row">
+        <span>Education</span>
+        <input type="number" value="30">
+        <span class="percent">%</span>
+      </div>
+
+      <div class="row">
+        <span>Others</span>
+        <input type="number" value="20">
+        <span class="percent">%</span>
       </div>
     </div>
 
-    <!-- Progress Bar -->
-    <div class="progress">
-      <div class="progress-fill" style="width: 65%;"></div>
-    </div>
-  </div>
+    <!-- PREVIEW -->
+    <div class="card preview">
+      <h2>Weekly Preview</h2>
 
-  <!-- Categories -->
-  <h3 class="section-title">Spending Categories</h3>
-
-  <div class="category-container">
-    <div class="card category-card">
-      <h4>Food</h4>
-      <p class="subtext">40%</p>
-      <p class="amount">₹200</p>
-    </div>
-
-    <div class="card category-card">
-      <h4>Travel</h4>
-      <p class="subtext">25%</p>
-      <p class="amount">₹125</p>
-    </div>
-
-    <div class="card category-card">
-      <h4>Entertainment</h4>
-      <p class="subtext">20%</p>
-      <p class="amount">₹100</p>
+      <div class="preview-row">
+        <span>Total / Week</span>
+        <span>₹500</span>
+      </div>
+      <div class="preview-row">
+        <span>Food</span>
+        <span>₹250</span>
+      </div>
+      <div class="preview-row">
+        <span>Education</span>
+        <span>₹150</span>
+      </div>
+      <div class="preview-row">
+        <span>Others</span>
+        <span>₹100</span>
+      </div>
     </div>
 
-    <div class="card category-card">
-      <h4>Others</h4>
-      <p class="subtext">15%</p>
-      <p class="amount">₹75</p>
-    </div>
-  </div>
-
-  <!-- Savings & Debt -->
-  <div class="two-column">
-    <div class="card savings">
-      <h4>Savings Wallet</h4>
-      <p class="amount">₹100</p>
-      <p class="subtext">Can be used in final cycle</p>
+    <!-- ACTIONS -->
+    <div class="buttons">
+      <button class="primary">Set Budget</button>
+      <button class="ghost">Reset Month</button>
     </div>
 
-    <div class="card debt">
-      <h4>Overspending Recovery</h4>
-      <p class="amount">₹200</p>
-      <p class="subtext">Adjusted gradually</p>
-    </div>
-  </div>
-
-  <!-- Insight -->
-  <div class="card insight">
-    <p>
-      You spent more in the last cycle, so this cycle is slightly tighter.
-      Stay mindful 🙂
-    </p>
   </div>
 
 </body>
