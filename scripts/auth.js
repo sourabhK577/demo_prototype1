@@ -41,10 +41,11 @@ signupForm.addEventListener("submit", function(e){
         sessionStorage.setItem("userName", newUser.name);
 
         // Redirect to dashboard
-        window.location.href = "Dashboard.html"; // adjust path if needed
+        window.location.href = "templates/Dashboard.html"; // adjust path if needed
     } else {
         alert("Please fill all fields to sign up!");
     }
 });
+
 
 
