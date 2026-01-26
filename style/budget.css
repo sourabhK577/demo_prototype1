@@ -1,114 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+/* BACKGROUND */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f6fb;
-  margin: 0;
-  padding: 20px;
+  background: linear-gradient(180deg, #f8fafc, #abc9e6);
+  color: #1f2937;
 }
 
-/* Header */
-.header {
-  margin-bottom: 20px;
-}
-
-.header h1 {
-  margin: 0;
-}
-
-.header p {
-  color: #666;
-}
-
-/* Common Card Style */
-.card {
-  background-color: white;
-  padding: 16px;
-  margin-bottom: 16px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-}
-
-/* Main Budget Card */
-.main-card {
-  background-color: #4f46e5;
+/* NAVBAR (COPIED & COMPATIBLE) */
+.navbar {
+  background: #0f172a;
   color: white;
-}
-
-.main-card .subtext {
-  color: #e0e0ff;
-}
-
-/* Text Helpers */
-.label {
-  font-size: 13px;
-  color: #777;
-}
-
-.subtext {
-  font-size: 13px;
-  color: #666;
-}
-
-.amount {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-/* Row Layout */
-.row {
+  padding: 1.3rem 2.8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.right {
-  text-align: right;
+.navbar h2 {
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  font-weight: 600;
 }
 
-/* Progress Bar */
-.progress {
-  background-color: #ddd;
-  height: 8px;
-  border-radius: 6px;
-  margin-top: 10px;
-}
-
-.progress-fill {
-  height: 100%;
-  background-color: #4f46e5;
-  border-radius: 6px;
-}
-
-/* Sections */
-.section-title {
-  margin: 20px 0 10px;
-}
-
-/* Categories */
-.category-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 12px;
-}
-
-.category-card {
-  text-align: center;
-}
-
-/* Savings & Debt */
-.two-column {
+.navbar ul {
+  list-style: none;
   display: flex;
-  gap: 12px;
+  gap: 1.8rem;
 }
 
-.savings {
-  border-left: 5px solid #22c55e;
+.navbar a {
+  text-decoration: none;
+  color: #cbd5f5;
+  padding: 0.45rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
 }
 
-.debt {
-  border-left: 5px solid #ef4444;
+.navbar a:hover,
+.navbar a.active {
+  background: #2563eb;
+  color: white;
 }
 
-/* Insight */
-.insight {
-  background-color: #eef2ff;
+/* PAGE */
+.page {
+  width: 600px;
+  margin: 60px auto;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.header h1 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.header p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 16px;
+  margin-bottom: 22px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.highlight {
+  border: 2px solid #e0e7ff;
+}
+
+/* BUDGET INPUT */
+label {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.budget-box {
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.budget-box span {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #374151;
+}
+
+.budget-box input {
+  width: 100%;
+  font-size: 26px;
+  font-weight: 600;
+  padding: 12px;
+  border: none;
+  outline: none;
+  background: #f3f4f6;
+  border-radius: 12px;
+}
+
+/* CATEGORY */
+h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.row span {
+  font-size: 14px;
+}
+
+.row input {
+  width: 70px;
+  padding: 8px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+}
+
+.percent {
+  color: #6b7280;
+  margin-left: 6px;
+}
+
+/* PREVIEW */
+.preview {
+  background: #f0f4ff;
+}
+
+.preview-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+/* BUTTONS */
+.buttons {
+  display: flex;
+  gap: 14px;
+}
+
+button {
+  flex: 1;
+  padding: 14px;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+.primary {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+}
+
+.primary:hover {
+  opacity: 0.95;
+}
+
+.ghost {
+  background: #f9fafb;
+  border: 1px solid #d1d5db;
+  color: #374151;
 }
