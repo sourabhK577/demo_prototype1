@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+/* BODY */
+body {
+  background:
+    radial-gradient(circle at top left, #eef2ff, transparent 40%),
+    radial-gradient(circle at bottom right, #fdf2f8, transparent 40%),
+    #f8fafc;
+  color: #1f2937;
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #0f172a;
+  color: white;
+  padding: 1.3rem 2.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #cbd5f5;
+  padding: 0.45rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  background: #2563eb;
+  color: white;
+}
+
+/* MAIN PAGE LAYOUT */
+.profile-page {
+  max-width: 1200px;
+  margin: 30px auto;
+  display: flex;
+  gap: 24px;
+  padding: 0 20px;
+}
+
+/* LEFT PANEL */
+.left-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* PROFILE CARD */
+.profile-card {
+  background: white;
+  padding: 28px 20px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow:
+    0 10px 20px rgba(0,0,0,0.06),
+    0 4px 8px rgba(0,0,0,0.04);
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px auto;
+}
+
+.profile-card h2 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.profile-card .email {
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* QUICK STATS CARDS */
+.stats-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.stat-card {
+  flex: 1 1 120px;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow:
+    0 10px 20px rgba(0,0,0,0.08),
+    0 4px 8px rgba(0,0,0,0.04);
+}
+
+.stat-card h4 {
+  font-size: 14px;
+  color: #475569;
+  margin-bottom: 6px;
+}
+
+.stat-card .amount {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* RIGHT PANEL */
+.right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* FRIENDS CARD */
+.friends-card {
+  background: white;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow:
+    0 10px 20px rgba(0,0,0,0.06),
+    0 4px 8px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.friends-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.friends-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.friends-search {
+  display: flex;
+  gap: 10px;
+}
+
+.friends-search input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid #cbd5f5;
+  font-size: 14px;
+}
+
+.friends-search button {
+  padding: 8px 14px;
+  border-radius: 12px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.friends-search button:hover {
+  opacity: 0.9;
+}
+
+/* FRIENDS LIST */
+.friends-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.friend-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.friend-row:hover {
+  background: #e0e7ff;
+}
+
+.friend-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.friend-name {
+  flex: 1;
+  font-weight: 500;
+}
+
+.friend-status {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.green { color: #16a34a; }
+.red { color: #dc2626; }
+
+/* SCROLLBAR */
+.friends-list::-webkit-scrollbar {
+  width: 6px;
+}
+.friends-list::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .profile-page {
+    flex-direction: column;
+  }
+}
