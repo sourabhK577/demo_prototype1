@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../style/profile.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h2>Expense Monitor</h2>
+    <ul>
+      <li><a href="index.html" class="active">Dashboard</a></li>
+      <li><a href="budget.html">Budget</a></li>
+      <li><a href="friends.html">friends</a></li>
+      <li><a href="transactions.html">Transactions</a></li>
+      <li><a href="profile.html">Profile</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN PAGE -->
+  <div class="profile-page">
+
+    <!-- LEFT PANEL: PROFILE INFO + QUICK STATS -->
+    <div class="left-panel">
+
+      <!-- PROFILE CARD -->
+      <div class="profile-card">
+        <div class="avatar">SK</div>
+        <h2>Sourabh Shivaji Kadam</h2>
+        <p class="email">sourabh.k@example.com</p>
+      </div>
+
+      <!-- QUICK STATS -->
+      <div class="stats-cards">
+        <div class="stat-card">
+          <h4>Total Budget</h4>
+          <p class="amount">₹2000</p>
+        </div>
+        <div class="stat-card">
+          <h4>Total Saved</h4>
+          <p class="amount green">₹280</p>
+        </div>
+        <div class="stat-card">
+          <h4>Total Overspent</h4>
+          <p class="amount red">₹200</p>
+        </div>
+        <div class="stat-card">
+          <h4>Leaderboard Rank</h4>
+          <p class="amount">#2</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT PANEL: FRIENDS SECTION -->
+    <div class="right-panel">
+      <div class="friends-card">
+        <div class="friends-header">
+          <h3>Friends</h3>
+          <div class="friends-search">
+            <input type="text" placeholder="Search friends...">
+            <button>+ Add</button>
+          </div>
+        </div>
+
+        <div class="friends-list">
+          <div class="friend-row">
+            <div class="friend-avatar">RA</div>
+            <span class="friend-name">Rahul Agarwal</span>
+            <span class="friend-status green">Saved 12%</span>
+          </div>
+          <div class="friend-row">
+            <div class="friend-avatar">RI</div>
+            <span class="friend-name">Riya Sharma</span>
+            <span class="friend-status red">Overspent -5%</span>
+          </div>
+          <div class="friend-row">
+            <div class="friend-avatar">AM</div>
+            <span class="friend-name">Aman Mehta</span>
+            <span class="friend-status green">Saved 8%</span>
+          </div>
+          <div class="friend-row">
+            <div class="friend-avatar">SM</div>
+            <span class="friend-name">Simran M.</span>
+            <span class="friend-status green">Saved 5%</span>
+          </div>
+          <div class="friend-row">
+            <div class="friend-avatar">RI</div>
+            <span class="friend-name">Ritika Iyer</span>
+            <span class="friend-status red">Overspent -3%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
